@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // KONFIGURASI
   // =====================================
 
-  const WHATSAPP_NUMBER = "60123456789";
+  const WHATSAPP_NUMBER = "601168175993";
 
   let currentLanguage = "id";
   let currentCategory = "all";
