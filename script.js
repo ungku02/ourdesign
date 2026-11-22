@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .querySelectorAll(".product-card .product-price")
       .forEach((price) => {
         price.textContent =
-          currentCurrency === "IDR" ? "Rp 40.000" : "RM 25.00";
+          currentCurrency === "IDR" ? "Rp 50.000" : "RM 25.00";
       });
   }
 
