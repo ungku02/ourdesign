@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentCurrency = "MYR";
 
   function formatProductPrice() {
-    document.querySelectorAll(".product-card .product-price").forEach((price) => {
-      price.textContent =
-        currentCurrency === "IDR"
-          ? "Rp 40.000"
-          : "RM 25.00";
-    });
+    document
+      .querySelectorAll(".product-card .product-price")
+      .forEach((price) => {
+        price.textContent =
+          currentCurrency === "IDR" ? "Rp 40.000" : "RM 25.00";
+      });
   }
 
   async function detectVisitorSettingsByIP() {
@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const activeCard = document.querySelector(".product-card.drawer-active");
     if (activeCard) {
       const activePrice = activeCard.querySelector(".product-price");
-      document.getElementById("drawerPrice").textContent = activePrice.textContent;
+      document.getElementById("drawerPrice").textContent =
+        activePrice.textContent;
     }
   }
 
@@ -84,13 +85,17 @@ document.addEventListener("DOMContentLoaded", function () {
         "Punya idea sendiri? Kami sedia membantu merealisasikan design mengikut keperluan dan identiti brand anda.",
 
       serviceGraphicTitle: "Custom Graphic Design",
-      serviceGraphicDescription: "Poster, konten media sosial, branding dan desain promosi sesuai kebutuhan Anda.",
+      serviceGraphicDescription:
+        "Poster, konten media sosial, branding dan desain promosi sesuai kebutuhan Anda.",
       servicePortfolioTitle: "Portfolio Design",
-      servicePortfolioDescription: "Portfolio profesional untuk personal branding, freelancer dan bisnis.",
+      servicePortfolioDescription:
+        "Portfolio profesional untuk personal branding, freelancer dan bisnis.",
       serviceSlidesTitle: "Presentation & Slides",
-      serviceSlidesDescription: "Slide presentasi yang rapi, menarik dan mudah dipahami untuk berbagai kebutuhan.",
+      serviceSlidesDescription:
+        "Slide presentasi yang rapi, menarik dan mudah dipahami untuk berbagai kebutuhan.",
       serviceWebsiteTitle: "Website Design",
-      serviceWebsiteDescription: "Desain website untuk personal, portfolio, bisnis dan kebutuhan online Anda.",
+      serviceWebsiteDescription:
+        "Desain website untuk personal, portfolio, bisnis dan kebutuhan online Anda.",
 
       productsLabel: "KOLEKSI DESAIN KAMI",
       productsTitle: "Temukan Produk Kami",
@@ -106,14 +111,23 @@ document.addEventListener("DOMContentLoaded", function () {
       priceLabel: "Harga Produk",
 
       product1: "Social Media Template – SukaDonat",
-      product1Description: "Koleksi desain media sosial yang playful untuk brand SukaDonat.",
+      product1Description:
+        "Koleksi desain media sosial yang playful untuk brand SukaDonat.",
       product2: "Social Media Template – SukaBanana",
-      product2Description: "Koleksi desain media sosial yang ceria untuk brand SukaBanana.",
+      product2Description:
+        "Koleksi desain media sosial yang ceria untuk brand SukaBanana.",
       product3: "Social Media Template – TheCoffee",
-      product3Description: "Koleksi desain media sosial yang warm dan minimal untuk TheCoffee.",
-      product4: "", product4Description: "",
-      product5: "", product5Description: "",
-      product6: "", product6Description: "",
+      product3Description:
+        "Koleksi desain media sosial yang warm dan minimal untuk TheCoffee.",
+      product4: "Social Media Template – Martabak",
+      product4Description:
+        "Koleksi desain media sosial yang warm dan minimal untuk Martabak.",
+      product5: "Social Media Template – Our Bread",
+      product5Description:
+        "Koleksi desain media sosial yang warm dan minimal untuk Our Bread.",
+      product6: "Social Media Template – Our Burger",
+      product6Description:
+        "Koleksi desain media sosial yang warm dan minimal untuk Our Burger.",
 
       orderButton: "PESAN SEKARANG",
 
@@ -157,16 +171,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       categoriesLabel: "CUSTOM DESIGN SERVICES",
       categoriesTitle: "Have a Design in Mind?",
-      categoriesDescription: "Have your own idea? We can bring it to life with a design tailored to your needs and brand identity.",
+      categoriesDescription:
+        "Have your own idea? We can bring it to life with a design tailored to your needs and brand identity.",
 
       serviceGraphicTitle: "Custom Graphic Design",
-      serviceGraphicDescription: "Posters, social media content, branding and promotional designs tailored to your needs.",
+      serviceGraphicDescription:
+        "Posters, social media content, branding and promotional designs tailored to your needs.",
       servicePortfolioTitle: "Portfolio Design",
-      servicePortfolioDescription: "Professional portfolios for personal branding, freelancers and businesses.",
+      servicePortfolioDescription:
+        "Professional portfolios for personal branding, freelancers and businesses.",
       serviceSlidesTitle: "Presentation & Slides",
-      serviceSlidesDescription: "Clean, engaging and easy-to-follow presentation slides for different purposes.",
+      serviceSlidesDescription:
+        "Clean, engaging and easy-to-follow presentation slides for different purposes.",
       serviceWebsiteTitle: "Website Design",
-      serviceWebsiteDescription: "Website design for personal brands, portfolios, businesses and online presence.",
+      serviceWebsiteDescription:
+        "Website design for personal brands, portfolios, businesses and online presence.",
 
       productsLabel: "OUR DESIGN COLLECTION",
       productsTitle: "Discover Our Products",
@@ -181,14 +200,23 @@ document.addEventListener("DOMContentLoaded", function () {
       priceLabel: "Product Price",
 
       product1: "Social Media Template – SukaDonat",
-      product1Description: "A playful social media design collection for SukaDonat.",
+      product1Description:
+        "A playful social media design collection for SukaDonat.",
       product2: "Social Media Template – SukaBanana",
-      product2Description: "A vibrant social media design collection for SukaBanana.",
+      product2Description:
+        "A vibrant social media design collection for SukaBanana.",
       product3: "Social Media Template – TheCoffee",
-      product3Description: "A warm and minimal social media design collection for TheCoffee.",
-      product4: "", product4Description: "",
-      product5: "", product5Description: "",
-      product6: "", product6Description: "",
+      product3Description:
+        "A warm and minimal social media design collection for TheCoffee.",
+      product4: "Social Media Template – Martabak",
+      product4Description:
+        "A warm and minimal social media design collection for Martabak.",
+      product5: "Social Media Template – Our Bread",
+      product5Description:
+        "A warm and minimal social media design collection for Our Bread.",
+      product6: "Social Media Template – Our Burger",
+      product6Description:
+        "A warm and minimal social media design collection for Our Burger.",
 
       orderButton: "ORDER NOW",
 
@@ -320,15 +348,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Sort catalog items without changing their product data.
   document.querySelectorAll(".sort-btn").forEach((button) => {
     button.addEventListener("click", function () {
-      document.querySelectorAll(".sort-btn").forEach((item) => item.classList.remove("active"));
+      document
+        .querySelectorAll(".sort-btn")
+        .forEach((item) => item.classList.remove("active"));
       this.classList.add("active");
       const cards = Array.from(productGrid.querySelectorAll(".product-card"));
       if (this.dataset.sort === "name") {
-        cards.sort((a, b) => a.dataset.sortName.localeCompare(b.dataset.sortName));
+        cards.sort((a, b) =>
+          a.dataset.sortName.localeCompare(b.dataset.sortName),
+        );
       } else {
-        cards.sort((a, b) => Number(a.dataset.sortOrder || 0) - Number(b.dataset.sortOrder || 0));
+        cards.sort(
+          (a, b) =>
+            Number(a.dataset.sortOrder || 0) - Number(b.dataset.sortOrder || 0),
+        );
       }
-      cards.forEach((card) => productGrid.insertBefore(card, productGrid.querySelector(".product-drawer-overlay")));
+      cards.forEach((card) =>
+        productGrid.insertBefore(
+          card,
+          productGrid.querySelector(".product-drawer-overlay"),
+        ),
+      );
     });
   });
 
@@ -437,7 +477,6 @@ document.addEventListener("DOMContentLoaded", function () {
       openWhatsApp(translations[currentLanguage].contactMessage);
     });
 
-
   // =====================================
   // PRODUCT DETAILS DRAWER + IMAGE SLIDER
   // =====================================
@@ -485,7 +524,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function openProductDrawer(card) {
     activeProductCard = card;
-    document.querySelectorAll(".product-card").forEach((item) => item.classList.remove("drawer-active"));
+    document
+      .querySelectorAll(".product-card")
+      .forEach((item) => item.classList.remove("drawer-active"));
     card.classList.add("drawer-active");
 
     const mainImage = card.querySelector(".product-image-wrapper img");
@@ -498,18 +539,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Isi data-gallery dengan 1 hingga 10 path gambar yang dipisahkan koma.
     // Jika tidak diisi, drawer menggunakan gambar utama kartu produk.
     const galleryAttribute = Array.from(
-      card.querySelectorAll(".product-gallery-data span")
-    ).map((item) => item.textContent.trim()).filter(Boolean).slice(0, 10);
+      card.querySelectorAll(".product-gallery-data span"),
+    )
+      .map((item) => item.textContent.trim())
+      .filter(Boolean)
+      .slice(0, 10);
 
-    drawerImages = galleryAttribute.length
-      ? galleryAttribute
-      : [mainImage.src];
+    drawerImages = galleryAttribute.length ? galleryAttribute : [mainImage.src];
 
     drawerImageIndex = 0;
 
     document.getElementById("drawerTitle").textContent = title.textContent;
-    document.getElementById("drawerDescription").textContent = description.textContent;
-    document.getElementById("drawerCategory").textContent = category.textContent;
+    document.getElementById("drawerDescription").textContent =
+      description.textContent;
+    document.getElementById("drawerCategory").textContent =
+      category.textContent;
     document.getElementById("drawerPrice").textContent = price.textContent;
     document.getElementById("drawerRating").innerHTML =
       `${rating.querySelector(".stars").textContent}<small>${rating.querySelector("small").textContent}</small>`;
@@ -541,7 +585,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("galleryPrev").addEventListener("click", () => {
     if (!drawerImages.length) return;
-    drawerImageIndex = (drawerImageIndex - 1 + drawerImages.length) % drawerImages.length;
+    drawerImageIndex =
+      (drawerImageIndex - 1 + drawerImages.length) % drawerImages.length;
     renderDrawerGallery();
   });
 
