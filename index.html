@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ourdesign. | Studio Desain Kreatif</title>
+    <link rel="icon" type="image/png" href="images/ourdesign-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">ourdesign<span>.</span></a>
+
+        <div class="nav-items">
+            <nav class="nav-links" id="navLinks">
+                <a href="#categories" data-i18n="navCategories">Kategori</a>
+                <a href="#products" data-i18n="navProducts">Produk</a>
+                <a href="#contact" data-i18n="navContact">Kontak</a>
+            </nav>
+
+            <div class="language-switch">
+                <button class="language-btn" data-lang="en">EN</button>
+                <span>/</span>
+                <button class="language-btn active" data-lang="id">ID</button>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+
+    <!-- BRAND -->
+    <section class="brand-section">
+        <h1>ourdesign<span>.</span></h1>
+    </section>
+
+
+    <!-- HERO -->
+    <section class="hero-section">
+
+        <div class="hero-left">
+            <span class="eyebrow" data-i18n="heroEyebrow">
+                STUDIO DESAIN KREATIF
+            </span>
+
+            <h2 data-i18n="heroTitle">
+                IDE KREATIF,<br>DESAIN JADI LEBIH MUDAH.
+            </h2>
+
+            <p data-i18n="heroDescription">
+                Temukan berbagai template digital kreatif untuk bisnis,
+                media sosial, pendidikan, dan kebutuhan lainnya.
+            </p>
+
+            <a href="#products" class="primary-btn" data-i18n="heroButton">
+                JELAJAHI PRODUK
+            </a>
+        </div>
+
+        <!-- KARTU KATEGORI HERO -->
+        <div class="hero-right">
+
+            <button class="hero-category-card" data-category-link="social-media">
+                <img src="images/hero1.jpeg" alt="Media Sosial">
+                <span class="hero-card-overlay"></span>
+                <span class="hero-card-title" data-i18n="categorySocial">Media Sosial</span>
+            </button>
+
+            <button class="hero-category-card" data-category-link="infographic">
+                <img src="images/hero2.jpeg" alt="Infografis">
+                <span class="hero-card-overlay"></span>
+                <span class="hero-card-title" data-i18n="categoryInfo">Infografis</span>
+            </button>
+
+            <button class="hero-category-card" data-category-link="ppt">
+                <img src="images/hero3.jpeg" alt="Desain PPT">
+                <span class="hero-card-overlay"></span>
+                <span class="hero-card-title" data-i18n="categoryPpt">Desain PPT</span>
+            </button>
+
+            <button class="hero-category-card" data-category-link="portfolio">
+                <img src="images/hero4.jpeg" alt="Portfolio">
+                <span class="hero-card-overlay"></span>
+                <span class="hero-card-title" data-i18n="categoryPortfolio">Portfolio</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- PRODUK / CATALOG -->
+    <section class="products-section catalog-section" id="products">
+        <div class="catalog-heading">
+            <div>
+                <span class="section-label" data-i18n="productsLabel">OUR DESIGN COLLECTION</span>
+                <h2 data-i18n="productsTitle">Discover Our Products</h2>
+            </div>
+        </div>
+
+        <div class="catalog-toolbar">
+            <div class="catalog-title" data-i18n="catalogCollection">Social Media Templates</div>
+            <div class="catalog-sort">
+                <button class="sort-btn active" data-sort="newest" data-i18n="sortNewest">Newest</button>
+                <button class="sort-btn" data-sort="name" data-i18n="sortName">Name</button>
+            </div>
+            <label class="catalog-search">
+                <span aria-hidden="true">⌕</span>
+                <input type="search" id="productSearch" placeholder="Search products..."
+                    data-placeholder-id="Cari produk..." data-placeholder-en="Search products...">
+            </label>
+        </div>
+
+        <div class="catalog-layout">
+            <aside class="catalog-sidebar">
+                <div class="sidebar-group">
+                    <h3 data-i18n="sidebarCategories">Categories</h3>
+                    <button class="sidebar-filter active" data-filter="all">
+                        <span data-i18n="filterAll">All Products</span><small>03</small>
+                    </button>
+                    <button class="sidebar-filter" data-filter="social-media">
+                        <span data-i18n="categorySocial">Social Media</span><small>03</small>
+                    </button>
+                </div>
+                <div class="sidebar-note">
+                    <span class="sidebar-note-line"></span>
+                    <p data-i18n="sidebarNote">Thoughtfully designed templates for your brand.</p>
+                </div>
+            </aside>
+
+            <div class="catalog-main">
+                <div class="product-result"><span id="resultCount">3 products</span></div>
+                <div class="product-grid" id="productGrid">
+
+                    <article class="product-card" data-category="social-media" data-sort-name="sukadonat"
+                        data-search="sukadonat donut doughnut food bakery social media instagram promotion">
+                        <div class="product-image-wrapper product-image-donut">
+                            <img src="images/sosmed/sukadonat/1.png" alt="SukaDonat Social Media Template">
+                            <button class="favorite-btn" type="button" aria-label="Add to favorites"
+                                aria-pressed="false">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category" data-i18n="categorySocial">SOCIAL MEDIA</span>
+                            <h3 data-i18n="product1">Social Media Template – SukaDonat</h3>
+                            <p data-i18n="product1Description">A playful social media design collection for SukaDonat.</p>
+                            <div class="product-meta">
+                                <span class="product-price">RM 25.00</span>
+                                <div class="product-rating"><span class="stars">★★★★★</span><small>New</small></div>
+                            </div>
+                            <a href="#" class="order-btn" data-product-id="product1" data-i18n="orderButton">ORDER NOW</a>
+                        </div>
+                        <div class="product-gallery-data" hidden>
+                            <span>images/sosmed/sukadonat/1.png</span><span>images/sosmed/sukadonat/2.png</span>
+                            <span>images/sosmed/sukadonat/3.png</span><span>images/sosmed/sukadonat/4.png</span>
+                            <span>images/sosmed/sukadonat/5.png</span><span>images/sosmed/sukadonat/6.png</span>
+                            <span>images/sosmed/sukadonat/7.png</span><span>images/sosmed/sukadonat/8.png</span>
+                            <span>images/sosmed/sukadonat/9.png</span><span>images/sosmed/sukadonat/10.png</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="social-media" data-sort-name="sukabanana"
+                        data-search="sukabanana banana pisang goreng food snack social media instagram promotion">
+                        <div class="product-image-wrapper product-image-banana">
+                            <img src="images/sosmed/sukabanana/1.png" alt="SukaBanana Social Media Template">
+                            <button class="favorite-btn" type="button" aria-label="Add to favorites"
+                                aria-pressed="false">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category" data-i18n="categorySocial">SOCIAL MEDIA</span>
+                            <h3 data-i18n="product2">Social Media Template – SukaBanana</h3>
+                            <p data-i18n="product2Description">A vibrant social media design collection for SukaBanana.</p>
+                            <div class="product-meta">
+                                <span class="product-price">RM 25.00</span>
+                                <div class="product-rating"><span class="stars">★★★★★</span><small>New</small></div>
+                            </div>
+                            <a href="#" class="order-btn" data-product-id="product2" data-i18n="orderButton">ORDER NOW</a>
+                        </div>
+                        <div class="product-gallery-data" hidden>
+                            <span>images/sosmed/sukabanana/1.png</span><span>images/sosmed/sukabanana/2.png</span>
+                            <span>images/sosmed/sukabanana/3.png</span><span>images/sosmed/sukabanana/4.png</span>
+                            <span>images/sosmed/sukabanana/5.png</span><span>images/sosmed/sukabanana/6.png</span>
+                            <span>images/sosmed/sukabanana/7.png</span><span>images/sosmed/sukabanana/8.png</span>
+                            <span>images/sosmed/sukabanana/9.png</span><span>images/sosmed/sukabanana/10.png</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="social-media" data-sort-name="thecoffee"
+                        data-search="thecoffee coffee cafe bakery drink social media instagram promotion">
+                        <div class="product-image-wrapper product-image-coffee">
+                            <img src="images/sosmed/thecoffee/1.png" alt="TheCoffee Social Media Template">
+                            <button class="favorite-btn" type="button" aria-label="Add to favorites"
+                                aria-pressed="false">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category" data-i18n="categorySocial">SOCIAL MEDIA</span>
+                            <h3 data-i18n="product3">Social Media Template – TheCoffee</h3>
+                            <p data-i18n="product3Description">A warm and minimal social media design collection for TheCoffee.</p>
+                            <div class="product-meta">
+                                <span class="product-price">RM 25.00</span>
+                                <div class="product-rating"><span class="stars">★★★★★</span><small>New</small></div>
+                            </div>
+                            <a href="#" class="order-btn" data-product-id="product3" data-i18n="orderButton">ORDER NOW</a>
+                        </div>
+                        <div class="product-gallery-data" hidden>
+                            <span>images/sosmed/thecoffee/1.png</span><span>images/sosmed/thecoffee/2.png</span>
+                            <span>images/sosmed/thecoffee/3.png</span><span>images/sosmed/thecoffee/4.png</span>
+                            <span>images/sosmed/thecoffee/5.png</span><span>images/sosmed/thecoffee/6.png</span>
+                            <span>images/sosmed/thecoffee/7.png</span><span>images/sosmed/thecoffee/8.png</span>
+                            <span>images/sosmed/thecoffee/9.png</span><span>images/sosmed/thecoffee/10.png</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT DETAIL DRAWER -->
+                <div class="product-drawer-overlay" id="productDrawerOverlay"></div>
+                <aside class="product-drawer" id="productDrawer" aria-hidden="true" aria-label="Product details">
+                    <div class="drawer-top">
+                        <span class="drawer-eyebrow">PRODUCT DETAILS</span>
+                        <button class="drawer-close" id="drawerClose" type="button" aria-label="Close details">&times;</button>
+                    </div>
+                    <div class="drawer-content">
+                        <div class="drawer-media-column">
+                            <div class="drawer-gallery">
+                                <img class="drawer-main-image" id="drawerMainImage" src="" alt="">
+                                <div class="drawer-gallery-nav">
+                                    <button type="button" id="galleryPrev" aria-label="Previous image">&#8249;</button>
+                                    <button type="button" id="galleryNext" aria-label="Next image">&#8250;</button>
+                                </div>
+                                <span class="drawer-gallery-counter" id="galleryCounter">1 / 10</span>
+                            </div>
+                            <div class="drawer-thumbnails" id="drawerThumbnails"></div>
+                        </div>
+                        <div class="drawer-product-info">
+                            <span class="drawer-category" id="drawerCategory"></span>
+                            <h2 class="drawer-title" id="drawerTitle"></h2>
+                            <div class="drawer-rating" id="drawerRating"></div>
+                            <p class="drawer-description" id="drawerDescription"></p>
+                            <div class="drawer-price-row">
+                                <span class="drawer-price-label" data-i18n="priceLabel">Product Price</span>
+                                <strong class="drawer-price" id="drawerPrice"></strong>
+                            </div>
+                            <button class="drawer-order" id="drawerOrder" type="button" data-i18n="orderButton">ORDER NOW</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="empty-result" id="emptyResult" hidden>
+                    <h3 data-i18n="emptyTitle">No products found</h3>
+                    <p data-i18n="emptyDescription">Try another keyword or category.</p>
+                    <button id="resetFilters" data-i18n="resetButton">View All Products</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CUSTOM ORDER SERVICES -->
+<section class="categories-section" id="categories">
+
+    <div class="section-heading">
+        <span class="section-label" data-i18n="categoriesLabel">
+            CUSTOM DESIGN SERVICES
+        </span>
+
+        <h2 data-i18n="categoriesTitle">Need a Custom Design?</h2>
+
+        <p data-i18n="categoriesDescription">
+            Punya idea sendiri? Kami sedia membantu merealisasikan
+            design mengikut keperluan dan identiti brand anda.
+        </p>
+    </div>
+
+    <div class="category-grid">
+
+        <button class="category-card" type="button" data-custom-service="Custom Graphic Design">
+            <div class="category-image">
+                <img src="images/servis1.png" alt="Custom Graphic Design">
+            </div>
+            <h3 data-i18n="serviceGraphicTitle">Custom Graphic Design</h3>
+            <p data-i18n="serviceGraphicDescription">Poster, social media content, branding dan design promosi mengikut keperluan anda.</p>
+        </button>
+
+        <button class="category-card" type="button" data-custom-service="Portfolio Design">
+            <div class="category-image">
+                <img src="images/servis2.png" alt="Portfolio Design">
+            </div>
+            <h3 data-i18n="servicePortfolioTitle">Portfolio Design</h3>
+            <p data-i18n="servicePortfolioDescription">Portfolio profesional dan menarik untuk personal branding, freelancer dan bisnes.</p>
+        </button>
+
+        <button class="category-card" type="button" data-custom-service="Presentation & Slides">
+            <div class="category-image">
+                <img src="images/servis3.png" alt="Presentation and Slides Design">
+            </div>
+            <h3 data-i18n="serviceSlidesTitle">Presentation & Slides</h3>
+            <p data-i18n="serviceSlidesDescription">Slide presentation yang kemas, visual dan mudah difahami untuk pelbagai tujuan.</p>
+        </button>
+
+        <button class="category-card" type="button" data-custom-service="Website Design">
+            <div class="category-image">
+                <img src="images/servis4.png" alt="Website Design">
+            </div>
+            <h3 data-i18n="serviceWebsiteTitle">Website Design</h3>
+            <p data-i18n="serviceWebsiteDescription">Website design untuk personal, portfolio, business dan online presence.</p>
+        </button>
+
+    </div>
+</section>
+
+
+<!-- KONTAK -->
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+            <span class="section-label" data-i18n="contactLabel">MARI BERKOLABORASI</span>
+            <h2 data-i18n="contactTitle">Punya Ide atau Proyek?</h2>
+            <p data-i18n="contactDescription">Mari wujudkan ide kreatifmu bersama Our Design.</p>
+            <a href="#" class="contact-btn" id="contactWhatsapp" data-i18n="contactButton">HUBUNGI KAMI</a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#" class="footer-logo">ourdesign<span>.</span></a>
+        <p data-i18n="footerDescription">Desain kreatif untuk setiap kebutuhan.</p>
+
+        <div class="footer-bottom">
+            <span>© 2026 Our Design. Hak cipta dilindungi.</span>
+            <span data-i18n="footerTagline">Dibuat dengan kreativitas.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
